@@ -2,7 +2,12 @@
 ## functions do
 
 ## Write a short comment describing this function
-## 
+## The first function, makeVector creates a special "vector", which is really a list containing a function to
+
+#1 - set the value of the vector
+#2 - get the value of the vector
+#3 - set the value of the mean
+#4 - get the value of the mean 
 
 makeCacheMatrix <- function(x = matrix()) {
 
