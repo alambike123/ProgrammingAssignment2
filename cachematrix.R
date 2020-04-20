@@ -2,16 +2,27 @@
 ## functions do
 
 ## Write a short comment describing this function
-## The first function, makeVector creates a special "vector", which is really a list containing a function to
+## 1 makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
 
-#1 - set the value of the vector
-#2 - get the value of the vector
-#3 - set the value of the mean
-#4 - get the value of the mean 
 
 makeCacheMatrix <- function(x = matrix()) {
+    i <- NULL
+    set <- function(y) { ## set the matrix
+      x <<- y
+      i <<- NULL
+    }
+    get <- function() x ## get the matrix
+    
+    setinverse <- function(inverse) i <<- inverse  ##set the inverse matrix
+    
+    getinverse <- function() i ##get the inverse matrix
+    
+    ##Methods used
+    list(set = set, get = get,
+         setinverse = setinverse,
+         getinverse = getinverse)
+  }
 
-}
 
 
 ## Write a short comment describing this function
